@@ -1,13 +1,9 @@
 from datetime import datetime
 
 from django.conf import settings
-from django.core.validators import (
-    MaxValueValidator,
-    MinValueValidator,
-)
+from django.core.validators import MaxValueValidator, MinValueValidator
 from rest_framework import serializers
-
-from reviews.models import Category, Genre, Title, Review, Comment
+from reviews.models import Category, Comment, Genre, Review, Title
 from users.models import User
 from users.validators import validate_username
 

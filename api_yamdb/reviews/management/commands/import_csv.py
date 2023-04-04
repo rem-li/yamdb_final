@@ -4,15 +4,7 @@ import os
 from django.conf import settings
 from django.core.management import BaseCommand
 from django.db import IntegrityError
-
-from reviews.models import (
-    Category,
-    Comment,
-    Genre,
-    GenreTitle,
-    Review,
-    Title
-)
+from reviews.models import Category, Comment, Genre, GenreTitle, Review, Title
 from users.models import User
 
 FILES_CLASSES = {
@@ -42,7 +34,6 @@ def open_csv_file(file_name):
             return list(csv.reader(file))
     except FileNotFoundError:
         print(f'Файл {csv_file} не найден.')
-        return
 
 
 def change_foreign_values(data_csv):
