@@ -28,7 +28,7 @@ jobs:
         # запуск проверки проекта по flake8
         python -m flake8
         # перейти в папку, содержащую manage.py
-        cd yamdb_final/api_yamdb
+        cd ./api_yamdb
         # запустить написанные разработчиком тесты
         python manage.py test
 
