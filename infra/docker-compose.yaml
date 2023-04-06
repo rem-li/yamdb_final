@@ -1,4 +1,4 @@
-version: '3.8'
+version: '3.3'
 
 services:
   db:
@@ -9,7 +9,7 @@ services:
       - ./.env
   web:
     image: remli/yandb_final:v1
-    build: ../api_yamdb/
+    # build: ../api_yamdb/
     restart: always
     volumes:
       - static_value:/app/static/
