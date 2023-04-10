@@ -65,6 +65,7 @@ jobs:
             key: ${{ secrets.SSH_KEY }}
             passphrase: ${{ secrets.PASSPHRASE }}
             script: |
+              sudo docker image pull remli/yamdb_final:latest
               sudo docker-compose stop
               # sudo docker-compose rm web
               sudo docker system prune -f
