@@ -11,7 +11,6 @@ services:
   web:
     image: remli/yamdb_final:latest
     # build: ../api_yamdb
-    command: gunicorn api_yamdb.wsgi:application --bind 0:8000
     restart: always
     volumes:
       - static_value:/app/static/
