@@ -1,5 +1,10 @@
 # yamdb_final
 # api_yamdb
+
+
+![my workflow](https://github.com/rem-li/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+
+
 ## Ссылки на проект:
 
 [Redoc](http://84.201.132.70/redoc/)
@@ -98,5 +103,3 @@ docker-compose exec web python manage.py loaddata fixtures.json
 [Иван Германов](https://github.com/ivgermanov)
 
 [Елизавета Веремьёва](https://github.com/rem-li)
-
-![my workflow](https://github.com/rem-li/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
